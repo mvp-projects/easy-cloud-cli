@@ -38,8 +38,6 @@ dev = [
   "pip-tools",
   "hatch",
   "mypy",
-  "mkdocs-material",
-  "python-dotenv"
 ]
 
 [project.urls]
