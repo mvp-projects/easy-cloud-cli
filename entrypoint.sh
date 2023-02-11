@@ -1,7 +1,5 @@
-#!/bin/bash
-set -e # Increase bash strictness
-set -o pipefail
+#!/bin/sh -l
 
-git config --global --add safe.directory /github/workspace
-
-echo "hello world"
+echo "Hello $1"
+time=$(date)
+echo "time=$time" >> $GITHUB_OUTPUT

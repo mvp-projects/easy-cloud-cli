@@ -1,0 +1,14 @@
+name: "Cloud CLI"
+description: "Deploy any CLI based application as a cloud service. We pack, deploy it, and manage it in a scalable and reliable maner"
+inputs:
+  who-to-greet:
+    description: "Who to greet"
+    required: true
+outputs:
+  time:
+    description: 'Time we greet you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
