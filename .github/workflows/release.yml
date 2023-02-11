@@ -2,9 +2,9 @@ name: build action
 
 on:
   workflow_dispatch
-  push:
-    tags:
-    - v*
+  # push:
+  #   tags:
+  #   - v*
 
 concurrency:
   group: build-action-${{ github.head_ref }}
