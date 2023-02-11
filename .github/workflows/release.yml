@@ -16,8 +16,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Build the docker image
-      run: echo ${{ github.repository }}
+    - name: Echo something
+      run: echo ${{ github.ref }}
+
+    # - name: Build the docker image
+    #   run: docker build . --file Dockerfile --tag ${{ github.repository }}:${{ github.repository.tag }}
 
 #   publish:
 #     name: Publish release
