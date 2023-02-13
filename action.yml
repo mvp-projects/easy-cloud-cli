@@ -1,5 +1,5 @@
 # action.yml
-name: 'Cloud CLI'
+name: 'Easy cloud CLI'
 description: 'Deploy your CLI application in the cloud.'
 inputs:
   who-to-greet:  # id of input
