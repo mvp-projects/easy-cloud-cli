@@ -1,4 +1,4 @@
-# Easy cloud CLI
+# Easy-Cloud CLI
 
 This action *will* make it easy to deploy any CLI application in the cloud.
 
