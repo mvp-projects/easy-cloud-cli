@@ -1,6 +1,10 @@
-# Cloud CLI
+# Easy cloud CLI
 
-This action *will* deploy any CLI application in the cloud.
+This action *will* make it easy to deploy any CLI application in the cloud.
+
+## Use cases
+
+- Data/Analytics engineering is heavily oriented in CLI application. `dbt`, `elementary`, etc. Make them an standalone service.
 
 ## Inputs
 
