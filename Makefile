@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 SHELL:=/usr/bin/env bash
 OS = $(shell uname | tr A-Z a-z)
-sources = cloud_cli tests scripts
+sources = easy_cloud_cli tests scripts
 
 .PHONY: install
 install: ## Install dev dependencies (MAKE SURE YOU ARE WITHIN A VENV).
@@ -59,7 +59,7 @@ clean: ## Cleans project folder mainly cache
 	@rm -f .coverage.*
 	@rm -f coverage.xml
 	@rm -rf build
-	@find tests cloud_cli -empty -type d -delete
+	@find tests easy_cloud_cli -empty -type d -delete
 
 .PHONY: serve-docs
 serve-docs: ## Serve project documentation

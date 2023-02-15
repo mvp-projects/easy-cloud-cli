@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "cloud_cli"
+name = "easy_cloud_cli"
 description = "Deploy any CLI based application as a cloud service. We pack, deploy it, and manage it in a scalable and reliable maner"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -23,7 +23,7 @@ classifiers = [
 # https://hatch.pypa.io/latest/config/dependency/
 dependencies = [
   "orjson",
-  "usecase-registry",
+  "use-case-registry",
   "loguru"
 ]
 dynamic = ["version"]
@@ -41,19 +41,19 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/mvp-projects/cloud-cli#readme"
-Issues = "https://github.com/mvp-projects/cloud-cli/issues"
-Source = "https://github.com/mvp-projects/cloud-cli"
+Documentation = "https://github.com/mvp-projects/easy-cloud-cli#readme"
+Issues = "https://github.com/mvp-projects/easy-cloud-cli/issues"
+Source = "https://github.com/mvp-projects/easy-cloud-cli"
 
 [tool.hatch.version]
-path = "cloud_cli/__about__.py"
+path = "easy_cloud_cli/__about__.py"
 
 [tool.coverage.run]
 branch = true
 parallel = true
 omit = [
-  "cloud_cli/__about__.py",
-  "cloud_cli/logging.py"
+  "easy_cloud_cli/__about__.py",
+  "easy_cloud_cli/logging.py"
 ]
 
 [tool.coverage.report]
@@ -175,12 +175,12 @@ addopts =[
   "--cov-fail-under=90", 
   "--cov-report=term-missing:skip-covered",
   "--cov-config=pyproject.toml",
-  "--cov=cloud_cli"
+  "--cov=easy_cloud_cli"
 ]
 
 [tool.mypy]
 files = [
-  "cloud_cli",
+  "easy_cloud_cli",
   "tests"
 ]
 

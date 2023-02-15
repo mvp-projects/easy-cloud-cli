@@ -4,7 +4,7 @@ from typing import Type
 
 import pytest
 
-from cloud_cli.example import some_function
+from easy_cloud_cli.example import some_function
 
 
 @pytest.mark.parametrize(
