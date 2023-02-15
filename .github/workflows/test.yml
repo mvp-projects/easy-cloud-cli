@@ -41,15 +41,13 @@ jobs:
           COVERAGE_FILE: ".coverage.${{ matrix.python-version }}"
 
       - name: Store coverage file
-        if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           name: coverage
           path: .coverage.${{ matrix.python-version }}
 
   coverage:
-    name: "Merging coverage reports"
-    if: github.event_name == 'pull_request'
+    name: Merging coverage reports
     needs:
     - run
     runs-on: ubuntu-latest
