@@ -48,6 +48,7 @@ jobs:
 
   coverage:
     name: "Merging coverage reports"
+    if: github.event.workflow_run.event == 'pull_request'
     needs:
     - run
     runs-on: ubuntu-latest
