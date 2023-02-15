@@ -55,6 +55,7 @@ omit = [
   "easy_cloud_cli/__about__.py",
   "easy_cloud_cli/logging.py"
 ]
+relative_files = true
 
 [tool.coverage.report]
 precision = 1
