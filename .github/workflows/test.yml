@@ -41,6 +41,7 @@ jobs:
           COVERAGE_FILE: ".coverage.${{ matrix.python-version }}"
 
       - name: Store coverage file
+        if: github.event.workflow_run.event == 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           name: coverage
